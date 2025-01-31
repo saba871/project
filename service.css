@@ -83,7 +83,7 @@ header nav a:hover {
   /* translateY() გადაააქვს y ღერძზე */
   /* დადებითი (+) მნიშვნელობა – ელემენტი ქვემოთ ჩამოიწევს. */
   /* უარყოფითი (-) მნიშვნელობა – ელემენტი ზევით აიწევა. */
-  transform: translateY(12px);
+  transform: translateY(-12px);
 }
 
 .car-item img {
