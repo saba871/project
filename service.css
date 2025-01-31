@@ -34,7 +34,7 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px;
 }
 
 .search-bar input {
@@ -60,13 +60,8 @@ header nav a:hover {
 }
 
 .car-list {
-  /* grid ის დახმრებით ვალაგებთ მანქანის სვეტებს */
-  /*  მანქანების ბლოკებიs განლაგდება */
   display: grid;
-  /* repeat() – განსაზღვრავს, რომ სვეტები მრავალჯერ განმეორდეს */
-  /* auto-fit – ავტომატურად მოერგება ელემენტის ზომას და ელემენტებს შორის დაშორებას. */
-  /* 320px-ზე პატარა ელემენტები არ იქნება. თუ მეტი სივრცეა, მეტი მოდელი დაეტევა. */
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 15fr));
   gap: 30px;
   padding: 20px;
 }
@@ -75,21 +70,16 @@ header nav a:hover {
   background-color: #1c1c1c;
   border: none;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s;
 }
 
 .car-item:hover {
-  /* translateY() გადაააქვს y ღერძზე */
-  /* დადებითი (+) მნიშვნელობა – ელემენტი ქვემოთ ჩამოიწევს. */
-  /* უარყოფითი (-) მნიშვნელობა – ელემენტი ზევით აიწევა. */
   transform: translateY(-12px);
 }
 
 .car-item img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
 }
 
 .car-item h2 {

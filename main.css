@@ -1,4 +1,4 @@
-/* ეს კოდი ახდენს ბრაუზერის defult სტილების reset-ს, რათა ყველა ელემენტს ჰქონდეს ერთიანი margin და padding */
+/* ეს კოდი ახდენს გუგლის defult სტილების reset-ს, რათა ყველა ელემენტს ჰქონდეს ერთიანი margin და padding */
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +15,13 @@ body {
 
 .container {
   display: flex;
-  /* კონტეინერი ფარავს ეკრაინის 100 % */
   height: 100vh;
 }
 
 .left-section {
-  /* flex: 1 სექცია იკავებს  კონტეინერი ელემენტისგან 50 % */
+  /* მოქნილობას აძლევს ელემენტს */
   flex: 1;
+  /* flex: 1 სექცია იკავებს  კონტეინერი ელემენტისგან 50 % */
   background-color: rgb(47, 47, 47);
   color: white;
   /* padding და შორება ჩემი კონტენტის გარშემო */
@@ -50,6 +50,7 @@ body {
   color: white;
   border: none;
   /* padding აქ ქმნის სივრცეს button ში ჩაწერილ ტექსტსა და მის border შორის */
+  /* ანუ 10 px ით ზემოდან და 20 ით მარჯვენა და მარცხენა მხარედან */
   padding: 10px 20px;
   cursor: pointer;
   font-size: 15px;
@@ -71,7 +72,8 @@ body {
 
 /* სურათს სიგანე მაქსიმუმის 100 % რაც რეზპონსივისთვისაა */
 .right-section img {
-  max-width: 100%;
+  width: 600px;
+  height: 400px;
 }
 
 .nav {
