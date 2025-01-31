@@ -1,0 +1,99 @@
+/* ეს კოდი ახდენს ბრაუზერის defult სტილების reset-ს, რათა ყველა ელემენტს ჰქონდეს ერთიანი margin და padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family ტეხსტის სტილისთვის */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #2a2929;
+  /* დაშორების defult მნიშვნელობა შევცვალეთ 0 ით */
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  /* კონტეინერი ფარავს ეკრაინის 100 % */
+  height: 100vh;
+}
+
+.left-section {
+  /* flex: 1 სექცია იკავებს  კონტეინერი ელემენტისგან 50 % */
+  flex: 1;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  /* padding და შორება ჩემი კონტენტის გარშემო */
+  padding: 50px;
+  display: flex;
+  /* ვალაგებთ შიგთავსს y ღეძისთვის ანუ სვეტად */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* h1 სათაურის ზომა და აქვს დაშორება 30 px ტექსტს შორის */
+.left-section h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* ტექსტის ზომა აქ არის 17px და 30px აქვს დაშორება ტექსტსა და ღილაკს */
+.left-section p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.left-section button {
+  background-color: red;
+  color: white;
+  border: none;
+  /* padding აქ ქმნის სივრცეს button ში ჩაწერილ ტექსტსა და მის border შორის */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.left-section button:hover {
+  background-color: rgb(152, 8, 8);
+}
+
+.right-section {
+  /* მარჯვენა სექცია იკავებს 50 % */
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* სურათს სიგანე მაქსიმუმის 100 % რაც რეზპონსივისთვისაა */
+.right-section img {
+  max-width: 100%;
+}
+
+.nav {
+  /* position: absolute ვიყენებთ იმისთვის რომ ჩემმა nav თეგებმა გადაინაცვლონ ზედა მარცხენა კუთხეში */
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  display: flex;
+  gap: 65px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
