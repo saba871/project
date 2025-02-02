@@ -24,7 +24,7 @@ header nav a {
   font-weight: bold;
 }
 
-header nav a:hover {
+nav a:hover {
   /* მაუსის მიტანისას ტექსტი ხაზგასმული გახდება */
   text-decoration: underline;
   color: #ff6347;
@@ -61,7 +61,7 @@ header nav a:hover {
 
 .car-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 15fr));
+  grid-template-columns: auto auto auto;
   gap: 30px;
   padding: 20px;
 }
@@ -92,12 +92,4 @@ header nav a:hover {
   margin: 15px 20px;
   font-size: 14px;
   color: #ccc;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
-  color: #f4f4f4;
-  margin-top: 30px;
 }

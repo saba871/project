@@ -70,7 +70,6 @@ body {
   align-items: center;
 }
 
-/* სურათს სიგანე მაქსიმუმის 100 % რაც რეზპონსივისთვისაა */
 .right-section img {
   width: 600px;
   height: 400px;
@@ -94,8 +93,4 @@ body {
 
 .nav a:hover {
   text-decoration: underline;
-}
-a {
-  text-decoration: none;
-  color: white;
 }
