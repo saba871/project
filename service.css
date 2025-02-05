@@ -36,7 +36,7 @@ nav a:hover {
   align-items: center;
   margin: 20px;
 }
-
+/* search ჩასაწერი */
 .search-bar input {
   width: 300px;
   padding: 12px;
@@ -45,7 +45,7 @@ nav a:hover {
   background-color: #222;
   color: #f4f4f4;
 }
-
+/* ღილაკი */
 .search-bar button {
   padding: 12px 20px;
   border: none;
@@ -61,16 +61,17 @@ nav a:hover {
 
 .car-list {
   display: grid;
+  /* ნიშნავს, რომ სამი სვეტი არის მოცემული და ამას ავტომატურად ალაგგებს ერთნაირი დაშორებით და სიგრძით */
   grid-template-columns: auto auto auto;
   gap: 30px;
   padding: 20px;
 }
 
 .car-item {
-  background-color: #1c1c1c;
+  background-color: black;
   border: none;
   border-radius: 12px;
-  transition: transform 0.4s;
+  transition: transform 0.5s;
 }
 
 .car-item:hover {
@@ -78,18 +79,18 @@ nav a:hover {
 }
 
 .car-item img {
-  width: 100%;
+  width: 550px;
   height: 250px;
 }
 
 .car-item h2 {
   font-size: 18px;
   margin: 20px;
-  color: #ff6347;
+  color: rgb(238, 97, 32);
 }
 
 .car-item p {
   margin: 15px 20px;
   font-size: 14px;
-  color: #ccc;
+  color: grey;
 }

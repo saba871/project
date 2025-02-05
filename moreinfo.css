@@ -1,29 +1,29 @@
+/* ყველა ელემენტს უსწორებს გარე და შიდა დაშორებებს ნულზე და აყენებს Arial შრიფტს */
 * {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
-
+/* მთელ გვერდს აძლევს ღია ნაცრისფერ ფონს და მუქ ნაცრისფერ ტექსტს */
 body {
   background-color: #f5f5f5;
   color: #333;
 }
-
+/* ჰედერის ფონი ხდება მუქი ნაცრისფერი და ემატება შიდა დაშორება */
 header {
   background-color: #222;
   padding: 15px;
 }
-
+/* ნავიგაციის ბმულების კონტეინერი განლაგებულია Flexbox-ით და ბმულები ცენტრში ინაცვლებს */
 .nav-links {
   display: flex;
   justify-content: center;
-  list-style: none;
 }
-
+/* ნავიგაციის თითოეულ ელემენტს აქვს მარცხენა და მარჯვენა დაშორება */
 .nav-links li {
   margin: 0 20px;
 }
-
+/* ნავიგაციის ბმულები თეთრია, არ აქვთ ხაზგასმა და ტექსტი 18px-ია */
 .nav-links li a {
   color: white;
   text-decoration: none;
@@ -39,22 +39,26 @@ header {
   background: white;
   gap: 50px;
 }
+/* მთავარი ინფორმაციის სექცია იკავებს მთელ ეკრანის სიმაღლეს, ელემენტები ცენტრში ინაცვლებს და მათ შორის არის 50px დაშორება */
 
 .text-container {
-  max-width: 600px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 20px;
 }
+/* ტექსტის კონტეინერი არის 600px სიგანის, ელემენტები განლაგებულია სვეტში, დაშორება 15px */
 
 .text-container h1 {
   font-size: 36px;
 }
+/* სათაურის ზომა არის 36px */
 
 .text-container p {
   font-size: 18px;
 }
+/* პარაგრაფის ტექსტის ზომა არის 18px */
 
 .btn {
   padding: 12px 24px;
@@ -63,14 +67,16 @@ header {
   text-decoration: none;
   font-size: 18px;
   border-radius: 8px;
-  width: fit-content;
 }
+/* ღილაკი წითელი ფერისაა, თეთრი ტექსტით, მომრგვალებული კუთხეებით */
 
 .btn:hover {
   background: #cc0000;
 }
+/* ღილაკზე მიტანილი მაუსის შემთხვევაში ფერი მუქდება */
 
 .image-container img {
   width: 500px;
   border-radius: 10px;
 }
+/* სურათის სიგანე 500px-ია და აქვს მომრგვალებული კუთხეები *
